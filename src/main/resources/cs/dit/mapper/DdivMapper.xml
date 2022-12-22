@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="cs.dit.mapper.DdivMapper">
+		<select id="getList" resultType="cs.dit.domain.DdivVO">
+			select * from ddiv order by num desc
+		</select>
+		
+		<insert id="insert">
+			insert into ddiv (date, point, equipment, fish, review) values (#{date}, #{point}, #{equipment}, #{fish}, #{review})
+		</insert>
+		
+		<select id="read" resultType="cs.dit.domain.DdivVO">
+			select * from ddiv where num = #{num}
+		</select>
+		
+		<delete id="delete" >
+			delete from ddiv where num = #{num}
+		</delete>
+		
+		<update id = "update">
+			update ddiv set date = #{date},
+			point = #{point}, equipment = #{equipment},
+			fish = #{fish}, review = #{review}
+			where num = #{num}
+		</update>
+		
+		<select id="counter" resultType="int">
+			select count(*) from ddiv
+		</select>
+	</mapper>
