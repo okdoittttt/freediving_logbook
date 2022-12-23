@@ -40,3 +40,7 @@ insert into sdiv(date, point, equipment, fish, review) values(date.now(), 'point
 insert into fdiv(date, point, equipment, fish, review) values(date.now(), 'point_sample', 'equipment_sample', 'fish_sample', 'review_sample');
 
 insert into ddiv(date, point, equipment, fish, review) values(date.now(), 'point_sample', 'equipment_sample', 'fish_sample', 'review_sample');
+
+insert into budy(name, tell, filename) values('bill', 01111111111, 'bill.jpg');
+insert into budy(name, tell, filename) values('elon', 01111111111, 'ellon.png.jpeg');
+insert into budy(name, tell, filename) values('steve', 01111111111, 'steve.jpeg');
