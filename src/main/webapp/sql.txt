@@ -1,0 +1,42 @@
+create table sdiv(
+	num int not null auto_increment,
+	date date,
+	point varchar(100),
+	equipment varchar(100),
+	fish varchar(100),
+	review varchar(100)
+	);
+	
+create table fdiv(
+	num int not null auto_increment,
+	date date,
+	point varchar(100),
+	equipment varchar(100),
+	fish varchar(100),
+	review varchar(100)
+	);
+	
+create table ddiv(
+	num int not null auto_increment,
+	date date,
+	point varchar(100),
+	equipment varchar(100),
+	fish varchar(100),
+	review varchar(100)
+	);
+	
+create table budy(
+	num int not null auto_increment,
+	name varchar(100),
+	tell varchar(100),
+	filename varchar(100)
+	);
+	
+
+commit;
+
+insert into sdiv(date, point, equipment, fish, review) values(date.now(), 'point_sample', 'equipment_sample', 'fish_sample', 'review_sample');
+
+insert into fdiv(date, point, equipment, fish, review) values(date.now(), 'point_sample', 'equipment_sample', 'fish_sample', 'review_sample');
+
+insert into ddiv(date, point, equipment, fish, review) values(date.now(), 'point_sample', 'equipment_sample', 'fish_sample', 'review_sample');
